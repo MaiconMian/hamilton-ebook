@@ -1,0 +1,4 @@
+.buttonClick button {
+  color: var(--strong-blue);
+  background: linear-gradient(to right, var(--standar-yellow), var(--strong-yellow));
+}

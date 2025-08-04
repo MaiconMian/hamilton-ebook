@@ -1,0 +1,36 @@
+
+
+:root {
+
+    --white: #fff;
+    --black: #000000;
+
+    --strong-blue: #173353;
+    --standart-blue: #1870b9;
+    --soft-blue: #28aee4;
+
+    --strong-yellow: #bd912d;
+    --standar-yellow: #fec010;
+    --soft-yellow: #ffd967;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--white); /* só aqui */
+}
