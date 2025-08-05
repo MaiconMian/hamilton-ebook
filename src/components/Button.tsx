@@ -1,15 +1,19 @@
 import styles from './Button.module.css'
 
-export function Button ({ title }: { title: string }){
+const color = [
+  styles.whitebutton,
+  styles.yellowbutton
+];
+
+export function Button ({ title, numbercolor}: { title: string; numbercolor: number}){
 
     function handleClick() {
         window.location.href = "";
     }
 
-
     return(
-        <div className={styles.buttonClick}>
-            <button onClick={handleClick}>{title}</button>
+        <div >
+            <button onClick={handleClick} className={color[numbercolor]}>{title}</button>
         </div>
     );
 

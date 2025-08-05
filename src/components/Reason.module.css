@@ -1,0 +1,30 @@
+.object{
+    border-radius: 1rem;
+    background: white;
+    width: 18rem;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.icon{
+    background: var(--standar-yellow);
+    border-radius: 1rem;
+    display: flex;           
+    justify-content: center; 
+    align-items: center; 
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+}
+
+.text{
+    font-weight: 900;
+    width: 12rem;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.2;
+    color: var(--strong-blue)
+}

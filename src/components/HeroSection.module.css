@@ -7,43 +7,48 @@
 }
 
 .buttonClick{
-    position: absolute;
-    top: 80%;    
-    left: 50%; 
+    padding-bottom: 0%;
+    margin-left: 35%;
     z-index: 10;
 }
 
 .principal{
-    display: flex;
     position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    
+    flex-direction: column;
 }
 
 .imageFamily {
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
   height: 45rem;
-  width: auto;
+  z-index: 1;
 }
 
 .imageFamily img {
-  position: absolute;
-  top: 0;     
-  right: 0; 
   height: 100%;
   width: auto;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .infoImageWrapper{
     flex-direction: row; 
     display: flex;
-    gap: 39rem;
+    flex-wrap: wrap;
 }
 
 .informations h1 {
-    width: 45rem;
+    width: 40%;
     font-size: 3.4rem;
     margin-left: 6rem;
-    font-weight: bold;
+    font-weight: 600;
     text-align: left;
     font-family: lato;
     color: var(--black);
@@ -51,14 +56,16 @@
 
 .informations strong {
     font-family: lato;
+    font-weight: 900;
     color: var(--strong-blue);
 }
 
 .informations span  {
-    width: 35rem;
+    width: 35%;
     font-size: 1.8rem;
     margin-left: 6rem;
     text-align: left;
+    font-weight: 600;
     color: var(--strong-blue);
 }
 

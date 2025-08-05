@@ -1,0 +1,23 @@
+.reasons{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--standar-yellow);
+    padding: 3rem;
+
+    display: flex;              /* Ativa o flexbox */
+    flex-direction: column;     /* Coloca os itens em coluna */
+    align-items: center; 
+    gap: 3rem;
+}
+
+.title{
+    color: var(--strong-blue);
+    border: 20%;
+    font-size: 3rem;
+}
+
+.cards{
+    display: flex;
+    align-items: row;
+    gap:5rem;
+}
