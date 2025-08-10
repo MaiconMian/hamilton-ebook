@@ -1,6 +1,7 @@
 import  styles  from './ReasonsSection.module.css'
 import { Reason } from './Reason'
 import { Button } from './Button';
+import happyCouple from '../assets/happy-couple.jpg';
 
 export function ReasonsSection(){
     return(<div>
@@ -16,6 +17,18 @@ export function ReasonsSection(){
             <div className={styles.buttonClick}>
                         <Button title="BAIXE AQUI O E-BOOK" numbercolor={1}/>
             </div>
+
+            <div className={styles.imageAndtextArea}>
+                <img src={happyCouple} className={styles.imageCouple}>
+                
+                </img>
+                <div className={styles.subtext}>
+                    <h1> E O PRINCIPAL... </h1>
+                    <p> Como atrair boas propostas com tranquilidade e segurança </p>
+                </div>
+                
+            </div>
+
         </div>
 
     </div>);

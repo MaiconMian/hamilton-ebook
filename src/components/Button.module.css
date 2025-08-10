@@ -1,6 +1,6 @@
 .whitebutton{
-  width: 30rem;
-  height: 3rem;
+  width: 100%;
+  height: 100%;
   color: var(--strong-blue);
   font-weight: 900;
   border: none;
@@ -8,8 +8,8 @@
 }
 
 .yellowbutton{
-  width: 30rem;
-  height: 3rem;
+  width: 100%;
+  height: 100%;
   color: var(--strong-blue);
   font-weight: 900;
   border: none;

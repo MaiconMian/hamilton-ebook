@@ -1,0 +1,13 @@
+.reasonsAndDownload{
+    position: relative;
+}
+
+.download{
+    margin-top: -5%;
+}
+
+@media (max-width: 1150px) {
+    .download{
+        margin-top: 5rem;
+    }
+}

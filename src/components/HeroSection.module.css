@@ -1,5 +1,6 @@
 .informations {
   display: flex;
+  margin-left: 8rem;
   gap: 3rem;
   justify-content: flex-start; 
   align-items: flex-start; 
@@ -7,20 +8,18 @@
 }
 
 .buttonClick{
-    padding-bottom: 0%;
-    margin-left: 35%;
+    width: 40%;
+    margin-left: 25%;
     z-index: 10;
+     padding-bottom: 2%;
 }
 
 .principal{
     position: relative;
-    width: 100vw;
-    min-height: 100vh;
-    background-color: white;
+    min-height: 45rem;
     display: flex;
     justify-content: flex-start; 
     align-items: flex-start;
-    
     flex-direction: column;
 }
 
@@ -39,6 +38,7 @@
 }
 
 .infoImageWrapper{
+    position: relative;
     flex-direction: row; 
     display: flex;
     flex-wrap: wrap;
@@ -46,8 +46,7 @@
 
 .informations h1 {
     width: 40%;
-    font-size: 3.4rem;
-    margin-left: 6rem;
+    font-size: 2.7rem;
     font-weight: 600;
     text-align: left;
     font-family: lato;
@@ -62,16 +61,49 @@
 
 .informations span  {
     width: 35%;
-    font-size: 1.8rem;
-    margin-left: 6rem;
+    font-size: 1.3rem;
     text-align: left;
     font-weight: 600;
     color: var(--strong-blue);
 }
 
 .logoImage{
-    margin-top: 3rem;
-    margin-left: 6rem;
+    margin-top: 6rem;
     width: 10rem;
     height: auto;
+}
+
+@media (max-width: 1150px) {
+  .imageFamily img {
+    display: none; 
+  }
+
+  .informations {
+    margin-left: 0%;
+    align-items: center;
+  }
+
+    .principal {
+        min-height: 0;
+    }
+
+   .buttonClick{
+        margin-left: 0%;
+        padding-bottom: 16%;
+    }
+
+    .informations h1 {
+        font-size: 2rem;
+        width: 60%;
+    }
+
+    .informations span  {
+        font-size: 1rem;
+        width: 60%;
+    }
+
+    .buttonClick{
+
+        width: 60%;
+    }
 }

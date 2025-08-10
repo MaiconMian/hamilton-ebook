@@ -1,11 +1,10 @@
 .reasons{
-    width: 100vw;
-    min-height: 100vh;
+    width: 98.9vw;
     background-color: var(--standar-yellow);
-    padding: 3rem;
+    padding-top: 3rem;
 
-    display: flex;              /* Ativa o flexbox */
-    flex-direction: column;     /* Coloca os itens em coluna */
+    display: flex;             
+    flex-direction: column;     
     align-items: center; 
     gap: 3rem;
 }
@@ -14,10 +13,69 @@
     color: var(--strong-blue);
     border: 20%;
     font-size: 3rem;
+    font-weight: 900;
 }
 
 .cards{
     display: flex;
     align-items: row;
     gap:5rem;
+}
+
+.buttonClick{
+    width: 40%;
+    z-index: 10;
+}
+
+.imageAndtextArea{
+    position: relative;
+    font-size: 100%;
+}
+
+.subtext{
+    text-align: left;
+    position: absolute;
+    top: 90%; 
+    left: 30%; 
+    transform: translate(-30%, -90%); 
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
+}
+
+.imageCouple{
+    width: 98.9vw;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1150px) {
+    .cards{        
+        flex-direction: column; 
+    }
+
+    .title{
+        border: 20%;
+        text-align: center;
+        width: 60%;
+        font-size: 1.7rem;
+    }
+
+    .subtext{
+        font-size: 80%;
+    }
+
+    .buttonClick{
+        width: 60%;
+        z-index: 10;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    .subtext{
+        font-size: 60%;
+    }
+
 }
