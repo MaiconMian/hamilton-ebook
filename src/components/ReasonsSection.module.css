@@ -1,5 +1,5 @@
 .reasons{
-    width: 98.9vw;
+    width: 100vw;
     background-color: var(--standar-yellow);
     padding-top: 3rem;
 
@@ -45,7 +45,7 @@
 }
 
 .imageCouple{
-    width: 98.9vw;
+    width: 100vw;
     height: auto;
     display: block;
 }
