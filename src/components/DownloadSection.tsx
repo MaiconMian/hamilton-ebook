@@ -3,18 +3,35 @@ import { Button } from './Button';
 import tabletebook from '../assets/tablet-ebook.png';
 import styles from './DownloadSection.module.css'
 
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useEffect } from "react";
+
 export function DownloadSection(){
+
+    useEffect(() => {
+                AOS.init({
+                    duration: 1000,
+                    once: false,
+                    offset: 100,
+                });
+        
+                AOS.refresh();
+        }, []);
+
+
     return(<div>
        <div className={styles.main}>
            <div className={styles.image}>
-                <img src={tabletebook} className={styles.imageTablet}></img>
-                <div className={styles.buttonImage}>
+
+                <img src={tabletebook} className={styles.imageTablet} data-aos="fade-right"></img>
+                <div className={styles.buttonImage} data-aos="fade">
                     <Button title="QUERO O MEU E-BOOK" numbercolor={0}/>
                 </div>
                 
             </div>
             
-            <div className={styles.informations}>
+            <div className={styles.informations} data-aos="fade-left">
 
                 <div className={styles.title}>
                         <h1 className={styles.titlePrincipal} >Por que Baixar</h1>

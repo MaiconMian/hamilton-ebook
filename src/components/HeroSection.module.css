@@ -8,10 +8,15 @@
 }
 
 .buttonClick{
+    transition: transform 0.3s ease;
     width: 40%;
     margin-left: 25%;
     z-index: 10;
     padding-bottom: 2%;
+}
+
+.buttonClick:hover {
+  transform: scale(1.1);
 }
 
 .principal{
@@ -94,16 +99,15 @@
 
     .informations h1 {
         font-size: 2rem;
-        width: 60%;
+        width: 70%;
     }
 
     .informations span  {
         font-size: 1rem;
-        width: 60%;
+        width: 70%;
     }
 
     .buttonClick{
-
-        width: 60%;
+        width: 70%;
     }
 }

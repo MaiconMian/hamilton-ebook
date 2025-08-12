@@ -23,9 +23,15 @@
 }
 
 .buttonClick{
+    transition: transform 0.3s ease;
     width: 40%;
     z-index: 10;
 }
+
+.buttonClick:hover {
+  transform: scale(1.1);
+}
+
 
 .imageAndtextArea{
     position: relative;
@@ -79,3 +85,4 @@
     }
 
 }
+

@@ -28,11 +28,16 @@
 }
 
 .buttonImage{
+    transition: transform 0.3s ease;
     position: absolute;
     width: 80%;
     bottom: 15%; 
     right: -25%;  
     z-index: 2;
+}
+
+.buttonImage:hover {
+  transform: scale(1.1);
 }
 
 .informations{

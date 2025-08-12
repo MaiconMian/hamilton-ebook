@@ -1,5 +1,10 @@
 import { Home, ListCollapse, Ban } from 'lucide-react';
-import styles from './Reason.module.css'
+import styles from './Reason.module.css';
+import 'animate.css';
+
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useEffect } from "react";
 
 const iconList = [
   <Home size={56} color="#fff" /> ,
@@ -9,9 +14,19 @@ const iconList = [
 
 
 export function Reason ({ text, icon }: { text: string ; icon: number}){
-    return (<div>
 
-        <div className={styles.object}>
+    useEffect(() => {
+        AOS.init({
+        duration: 600, 
+        once: false, 
+        offset: 100 
+        });
+    }, []);
+
+
+    return (<div className={styles.container}>
+
+        <div className={styles.object} data-aos="fade-down">
             <div className={styles.icon}>
                 {iconList[icon] || null}
             </div>
