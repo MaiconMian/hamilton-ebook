@@ -34,6 +34,7 @@
   right: 0;
   height: 45rem;
   z-index: 1;
+  object-fit: cover;
 }
 
 .imageFamily img {
@@ -79,14 +80,53 @@
 }
 
 @media (max-width: 1150px) {
-  .imageFamily img {
-    display: none; 
+
+    .logoImage{
+      margin-top: 4rem;
+      width: 10rem;
+      height: auto;
   }
 
-  .informations {
-    margin-left: 0%;
-    align-items: center;
+    .imageFamily {
+      margin-top: -16%;
+      position: relative;
+      top: 0rem;
+      width: 100vw;
+      height: 50%;
+      overflow: hidden;
+      display: block;
+      z-index: 1;
+    }
+
+    .imageFamily::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none; 
+      background: linear-gradient(to bottom, white 0%, transparent 70%);
+    }
+
+    .imageFamily picture {
+    display: block;
   }
+
+    .imageFamily img{
+      display: block;
+      width: 100%;
+      height: auto; 
+      max-height: 50vh;
+      object-fit: cover;
+    }
+
+    .informations {
+      width: 100%;
+      margin-left: 0%;
+      gap: 2rem;
+      align-items: center;
+    }
 
     .principal {
         min-height: 0;
@@ -98,12 +138,12 @@
     }
 
     .informations h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         width: 70%;
     }
 
     .informations span  {
-        font-size: 1rem;
+        font-size: 1em;
         width: 70%;
     }
 

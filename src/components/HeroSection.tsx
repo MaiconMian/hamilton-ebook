@@ -2,6 +2,7 @@ import logoImage from '../assets/logo.png';
 import happyFamily from '../assets/happy-family.png';
 import { Button } from './Button';
 import styles from './HeroSection.module.css';
+import happyFamilySmall from "../assets/happy-family-small.png";
 
 import "aos/dist/aos.css";
 import AOS from "aos";
@@ -36,12 +37,13 @@ export function HeroSection(){
                 </div>
 
                 <div className={styles.imageFamily} data-aos="fade-left">
+                <picture>
+                    <source srcSet={happyFamilySmall} media="(max-width: 1150px)" />
                     <img src={happyFamily} alt="Família Feliz" />
+                </picture>
                 </div>
                 
             </div>
-
-           
 
         </div>
 
