@@ -1,5 +1,3 @@
-import logoImage from '../assets/logo.png';
-
 import { Button } from './Button';
 import tabletebook from '../assets/tablet-ebook.png';
 import styles from './HeroSection.module.css';
