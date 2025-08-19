@@ -1,7 +1,8 @@
 import { Frown, Book } from 'lucide-react';
 import { Button } from './Button';
-import tabletebook from '../assets/tablet-ebook.png';
 import styles from './DownloadSection.module.css'
+import happyFamilySmall from "../assets/happy-family-small.png";
+import happyFamily from '../assets/happy-family.png';
 
 import "aos/dist/aos.css";
 import AOS from "aos";
@@ -22,10 +23,15 @@ export function DownloadSection(){
 
     return(<div>
        <div className={styles.main}>
+
            <div className={styles.image}>
 
-                <img src={tabletebook} className={styles.imageTablet} data-aos="fade-right"></img>
-                <div className={styles.buttonImage} data-aos="fade">
+                <picture className={styles.imageTablet} data-aos="fade-right">
+                        <source srcSet={happyFamilySmall} media="(max-width: 1150px)" />
+                        <img src={happyFamily} alt="Family" />
+                </picture>
+
+                <div className={styles.buttonImage}>
                     <Button title="QUERO O MEU E-BOOK" numbercolor={0}/>
                 </div>
                 

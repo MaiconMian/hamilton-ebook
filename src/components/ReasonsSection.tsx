@@ -30,7 +30,7 @@ export function ReasonsSection(){
                 <Reason text="Os erros mais comuns que afastam interessados." icon={2}/>
             </div>
 
-            <div className={styles.buttonClick} data-aos="fade-down">
+            <div className={styles.buttonClick}>
                         <Button title="BAIXE AQUI O E-BOOK" numbercolor={1}/>
             </div>
 
