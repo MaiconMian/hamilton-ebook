@@ -30,12 +30,12 @@ export function ReasonsSection(){
                 <Reason text="Os erros mais comuns que afastam interessados." icon={2}/>
             </div>
 
-            <div className={styles.buttonClick}>
+            <div className={styles.buttonClick} data-aos="fade-down">
                         <Button title="BAIXE AQUI O E-BOOK" numbercolor={1}/>
             </div>
 
             <div className={styles.imageAndtextArea} data-aos="fade-down">
-                <img src={happyCouple} className={styles.imageCouple}>
+                <img src={happyCouple} className={styles.imageCouple} alt="Casal sorringo enquanto segura a chave da sua nova casa">
                 
                 </img>
                 <div className={styles.subtext}>

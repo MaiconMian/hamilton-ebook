@@ -28,7 +28,7 @@ export function DownloadSection(){
 
                 <picture className={styles.imageTablet} data-aos="fade-right">
                         <source srcSet={happyFamilySmall} media="(max-width: 1150px)" />
-                        <img src={happyFamily} alt="Family" />
+                        <img src={happyFamily} alt="Criança dentro de uma caixa brincando da mudança com sua mãe enquanto o pai olha" />
                 </picture>
 
                 <div className={styles.buttonImage}>

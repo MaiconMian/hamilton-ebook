@@ -37,7 +37,7 @@ export function HeroSection(){
 
                 <div className={styles.imageFamily} data-aos="fade-left">
                 <picture>
-                    <img src={tabletebook} alt="Família Feliz" />
+                    <img src={tabletebook} alt="Pessoa segurando um tablet com o e-book" />
                 </picture>
                 </div>
                 
